@@ -1,4 +1,4 @@
-### angular2 with routing capabilities
+### Angular2 with routing and sub-routing capabilities
 
 Finding it hard to find a good Angular 2 routing example?
 
