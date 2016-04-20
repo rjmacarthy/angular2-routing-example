@@ -1,7 +1,11 @@
-import { Component } from 'angular2/core';
-import { RouterOutlet, RouteConfig, ROUTER_DIRECTIVES  } from 'angular2/router';
+import * as actions from '../../actions/group';
+import BaseComponent from '../base/BaseComponent';
 import ChildRoute  from './ChildRoute/ChildRoute';
 import ChildRoute2  from './ChildRoute2/ChildRoute2';
+import registrations from './Registrations';
+import { Component, Inject } from 'angular2/core';
+import { RouterOutlet, RouteConfig, ROUTER_DIRECTIVES  } from 'angular2/router';
+
 
 @Component({
     selector: 'subroute',
@@ -14,8 +18,10 @@ import ChildRoute2  from './ChildRoute2/ChildRoute2';
     { path: '/childroute2', component: ChildRoute2, name: 'ChildRoute2'  }
 ])
 
-class SubRoute {
-    title: string = 'SubRoute';
+class SubRoute extends BaseComponent {
+    constructor( @Inject('ngRedux') ngRedux) {
+		super(actions, registrations, ngRedux);
+    }
 }
 
 

@@ -6,5 +6,21 @@
             <a [routerLink]="['./ChildRoute2']">Childroute 2</a>
         </li>
     </ul>
+    <hr>
+    <div>
+    	I am listening to a redux store too
+    </div>
+    <div>
+    	The current users name is : {{user.name}}
+    </div>
+    <div>
+    	The current groups name is : {{group.name}}
+    </div>
+    <div>
+    	Click me to change the group name!
+    	<button (click)="actions.setGroup({ name : 'Jimmy'})">
+    		Change group name
+    	</button>
+    </div>
     <router-outlet></router-outlet>
 </div>

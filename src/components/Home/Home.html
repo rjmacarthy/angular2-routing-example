@@ -1,3 +1,17 @@
 <div>
-    This is the home page
+    <p>This is the home page</p>
+    <div>
+        The current user state is : {{ user.status }}
+    </div>
+    <div>
+    	Name : {{user.name}}
+    </div>
+    <div>
+        <button (click)="actions.setUser({status : !user.status, name : 'Adam'})">
+            Toggle status
+        </button>
+    </div>
+    <hr>
+    <p>This is another store object</p>
+    <p>{{group.name}}</p>
 </div>
