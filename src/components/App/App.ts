@@ -5,17 +5,18 @@ import SubRoute  from '../SubRoute/SubRoute';
 
 @Component({
     selector: 'app',
+    styleUrls: ['./components/App/app.css'],
     templateUrl: './components/App/App.html',
-    directives: [RouterOutlet, ROUTER_DIRECTIVES],
+    directives: [RouterOutlet, ROUTER_DIRECTIVES]
 })
 
 @RouteConfig([
-    { path: '/', component: Home, as: 'Home', useAsDefault : true },
+    { path: '/', component: Home, as: 'Home', useAsDefault: true },
     { path: '/subroute/...', component: SubRoute, as: 'SubRoute' }
 ])
 
 class AppComponent {
-    title: string = 'App';
+    public title: string = 'App';
 }
 
 export default AppComponent;
