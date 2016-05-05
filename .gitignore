@@ -1,3 +1,4 @@
 dist/angular2.js
 node_modules
 .vscode
+dist
