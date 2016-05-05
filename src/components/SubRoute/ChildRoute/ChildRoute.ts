@@ -1,10 +1,8 @@
-import { Component } from 'angular2/core';
-let template = require('./ChildRoute.html');
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'childroute',
-    template
-   // templateUrl: './components/SubRoute/ChildRoute/ChildRoute.html'
+    templateUrl: './components/SubRoute/ChildRoute/ChildRoute.html'
 })
 
 class ChildRoute {

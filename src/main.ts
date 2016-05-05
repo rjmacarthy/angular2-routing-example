@@ -1,8 +1,9 @@
-///<reference path="../node_modules/angular2/typings/browser.d.ts"/>
+
 
 import 'core-js';
 import 'zone.js/dist/zone';
-import { bootstrap } from 'angular2/platform/browser';
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {HTTP_PROVIDERS} from '@angular/http';
 import AppComponent from './components/App/App';
-import {ROUTER_PROVIDERS} from 'angular2/router';
-bootstrap(AppComponent, [ROUTER_PROVIDERS] );
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+bootstrap(AppComponent, [...ROUTER_PROVIDERS, ...HTTP_PROVIDERS] );

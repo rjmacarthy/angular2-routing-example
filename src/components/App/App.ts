@@ -1,5 +1,5 @@
-import { Component } from 'angular2/core';
-import { RouterOutlet, RouteConfig, ROUTER_DIRECTIVES  } from 'angular2/router';
+import { Component } from '@angular/core';
+import { RouterOutlet, RouteConfig, ROUTER_DIRECTIVES  } from '@angular/router-deprecated';
 import Home  from '../Home/Home';
 import SubRoute  from '../SubRoute/SubRoute';
 
